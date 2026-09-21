@@ -13,6 +13,6 @@ export function cn(...inputs: ClassValue[]) {
  * slash would otherwise point at the domain root and 404.
  */
 export function assetUrl(path: string): string {
-  const base = import.meta.env.BASE_URL || '/';
-  return base.replace(/\/$/, '') + '/' + path.replace(/^\//, '');
+  const cleanPath = path.replace(/^\//, '');
+  return `/kankoon/${cleanPath}`;
 }
