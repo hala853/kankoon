@@ -1,0 +1,10 @@
+# Force Git to always treat these as binary (never apply CRLF/LF conversion).
+# Without this, autocrlf settings on some machines can silently corrupt
+# binary image files on commit/checkout.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg -text
