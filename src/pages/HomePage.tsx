@@ -47,15 +47,11 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background z-10" />
-          <img 
-            src={assetUrl("/hero-landscape.jpeg")} 
-            alt="Hero Background" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.classList.add('bg-muted');
-            }}
-          />
+       <img
+  src={assetUrl("/hero-landscape.jpeg")}
+  alt="Hero Background"
+  className="w-full h-full object-cover"
+/>
         </div>
 
         <div className="container mx-auto px-4 relative z-20 flex flex-col items-center mt-10">
